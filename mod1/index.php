@@ -228,7 +228,6 @@ class  tx_caleventtemplate_module1 extends t3lib_SCbase {
 
                                                             if (count($tce->errorLog) > 0) {
                                                                     // Handle error here
-                                                                    debug($tce->errorLog);
                                                                     $content.=$GLOBALS['LANG']->getLL('tce_copy_error');
 
                                                             } else {
