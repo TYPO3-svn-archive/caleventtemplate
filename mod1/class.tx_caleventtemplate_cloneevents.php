@@ -6,24 +6,15 @@
 	*/
 	class tx_caleventtemplate_cloneevents {
 		
-		var $info = '';
-		var $pageIDForPlugin;
-		var $starttime;
-		var $endtime;
-		var $extConf;
+		private $info = '';
+		private $pageIDForPlugin;
+		private $starttime;
+		private $endtime;
+		private $extConf;
 		
-		function tx_caleventtemplate_cloneevents() {
+                
+		public function __construct() {
 			$this->extConf = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['cal']);
-/*			$this->pageIDForPlugin = $pageIDForPlugin;
-			if($starttime == null) {
-				$starttime = $this->extConf['recurrenceStart'];
-			}
-			$this->starttime = $starttime;
-			if($endtime == null) {
-				$endtime = $this->extConf['recurrenceEnd'];
-			}
-			$this->endtime = $endtime;
-*/
 		}
 		
 
